@@ -41,7 +41,7 @@
         This API provides CRUD operations for managing contact details. It is
         deployed on:
         <a href="https://your-api-url.com" class="link-primary"
-          >https://your-api-url.com</a
+          >https://cse341-contacts-073h.onrender.com</a
         >
       </p>
 
@@ -51,8 +51,8 @@
       </p>
       <div class="alert alert-primary">
         <strong>Header:</strong> x-api-key <br />
-        <strong>Value:</strong> (Request API Key via email:
-        <a href="mailto:ebinuga@hotmail.com">ebinuga@hotmail.com</a>)
+        <strong>Value:</strong>
+        59f548e1b76881701f247619c27d929688377204fa5e5aaa3cd4445e679eaa02
       </div>
 
       <h2>Endpoints</h2>
@@ -75,9 +75,42 @@
             data-bs-parent="#apiRoutes"
           >
             <div class="accordion-body">
-              <p>Fetches all saved contacts.</p>
+              <p>
+                If you do not include the apiKey field in the headers of your
+                request, you will see something like this:
+              </p>
               <img
-                src="./images/getAllContacts.png"
+                width="600"
+                height="600"
+                src="./images/unauthorized.png"
+                class="img-fluid"
+                alt="Unauthorized no apiKey"
+              />
+              <br />
+              <br />
+              <br />
+              <p>
+                If you include the apiKey field in the headers of your request
+                but its wrong apiKey, you will see something like this:
+              </p>
+              <img
+                width="600"
+                height="600"
+                src="./images/forbidden.png"
+                class="img-fluid"
+                alt="wrong apiKey"
+              />
+              <br />
+              <br />
+              <br />
+              <p>
+                Fetches all saved contacts. If you include the api key and value
+                in the header, you will see a response similar to this below:
+              </p>
+              <img
+                width="600"
+                height="600"
+                src="./images/getallcontact.png"
                 class="img-fluid"
                 alt="GET all contacts response"
               />
@@ -106,7 +139,9 @@
             <div class="accordion-body">
               <p>Fetches a specific contact by ID.</p>
               <img
-                src="./images/getContactById.png"
+                width="600"
+                height="600"
+                src="./images/fetchId.png"
                 class="img-fluid"
                 alt="GET contact by ID response"
               />
@@ -135,7 +170,9 @@
             <div class="accordion-body">
               <p>Creates a new contact.</p>
               <img
-                src="./images/createContact.png"
+                width="600"
+                height="600"
+                src="./images/create.png"
                 class="img-fluid"
                 alt="POST create contact response"
               />
@@ -164,7 +201,9 @@
             <div class="accordion-body">
               <p>Updates an existing contact.</p>
               <img
-                src="./images/updateContact.png"
+                width="600"
+                height="600"
+                src="./images/updatebyId.png"
                 class="img-fluid"
                 alt="PUT update contact response"
               />
@@ -193,7 +232,7 @@
             <div class="accordion-body">
               <p>Deletes a contact by ID.</p>
               <img
-                src="./images/deleteContact.png"
+                src="./images/delete.png"
                 class="img-fluid"
                 alt="DELETE contact response"
               />
